@@ -1,12 +1,13 @@
-name: flask
+name: streamlit
 channels:
   - defaults
 dependencies:
   - python=3.9
   - pip
   - pip:
-    - flask
+    - streamlit
     - pandas
     - seaborn
     - scikit-learn
     - jupyter
+    - altair
