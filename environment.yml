@@ -1,0 +1,12 @@
+name: flask
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - flask
+    - pandas
+    - seaborn
+    - scikit-learn
+    - jupyter
