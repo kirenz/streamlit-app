@@ -11,3 +11,5 @@ dependencies:
     - scikit-learn
     - jupyter
     - altair
+    - plotly
+    - matplotlib
