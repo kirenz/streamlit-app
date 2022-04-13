@@ -3,6 +3,8 @@
 [Streamlit](https://streamlit.io) turns data scripts into shareable web apps in minutes. 
 All in pure Python. No front‑end experience required.
 
+![](https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4)
+
 A [Streamlit demo](https://streamlit.io/gallery) to interactively visualize Uber pickups in New York City:
 
 ![](img/uber.png)
@@ -51,6 +53,12 @@ conda env create -f environment.yml
 
 ```bash
 conda activate streamlit
+```
+
+- Test if installation was succesful (this will open a demo):
+
+```bash
+streamlit hello
 ```
 
 ## Main concepts
