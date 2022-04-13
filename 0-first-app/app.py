@@ -1,64 +1,70 @@
+# SETUP
+
 import streamlit as st
 import numpy as np
 import pandas as pd
+from pickle import APPEND
+from turtle import width
 
+#-------------------
+# CREATE DATA
+
+# Simple dataframe
+df = pd.DataFrame({
+    'A': [1, 4, 3, 2],
+    'B': [10, 20, 30, 40]
+    })
+
+#-------------------
+# START OF APP
+
+#-------------------
+# HEADER
+
+# Title of our app
+st.title("Hello World!")
+# Add header
+st.header("This is my first app")
+# Add a gif
+st.markdown("![Alt Text](https://media.giphy.com/media/MeJgB3yMMwIaHmKD4z/giphy.gif)")
+
+#-------------------
+# BODY
+
+#-------------------
+# Show static DataFrame
+st.subheader("Show Dataframe")
 st.write("Here's our first attempt at using data to create a table:")
+st.write(df)
 
-st.write(pd.DataFrame({
-    'first column': [1, 2, 3, 4],
-    'second column': [10, 20, 30, 40]
-}))
-
+#-------------------
+# Highlight some attributes
 st.write("DataFrame with highlight_max:")
+st.dataframe(df.style.highlight_max(axis=0))
 
-dataframe = pd.DataFrame(
-    np.random.randn(10, 20),
-    columns=('col %d' % i for i in range(20)))
+#-------------------
+# Bar chart
+st.subheader("Bar chart")
+# standard bar chart
+st.bar_chart(df)
 
-st.dataframe(dataframe.style.highlight_max(axis=0))
+#-------------------
+# Show metric
+st.subheader("Display Metrics")
+st.metric("My metrics", 32, 4)
 
-st.write("Line chart")
-
-chart_data = pd.DataFrame(
-     np.random.randn(20, 3),
-     columns=['a', 'b', 'c'])
-
-st.line_chart(chart_data)
-
-st.write("Plot a map")
-
-map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-    columns=['lat', 'lon'])
-
-st.map(map_data)
-
-# Widgets
-
+#-------------------
+# Add slider with user input
+st.subheader("Slider")
 st.write("This is a Slider")
-
-
 x = st.slider('x')  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
 
-st.write("Checkbox with hidden content")
+#-------------------
+# Show code
+st.subheader("Show some code")
 
-if st.checkbox('Show dataframe'):
-    chart_data_2 = pd.DataFrame(
-       np.random.randn(20, 3),
-       columns=['a', 'b', 'c'])
+code = '''def hello():
+     print("Hello, Streamlit!")'''
 
-    chart_data_2
-
-
-st.write("Selectbox with options")
-
-df2 = pd.DataFrame({
-    'first column': [1, 2, 3, 4],
-    'second column': [10, 20, 30, 40]
-    })
-
-option = st.selectbox(
-    'Which number do you like best?',
-     df2['first column'])
-
+st.code(code, language='python')
