@@ -55,13 +55,29 @@ conda env create -f environment.yml
 conda activate streamlit
 ```
 
-- Test if installation was succesful (this will open a demo):
+- Test if your installation was succesful (this will open a demo):
 
 ```bash
 streamlit hello
 ```
+- Stop your app with `Ctrl+C`
 
-## Main concepts
+- cd into 0-first-app
+
+```bash
+cd 0-first-app
+```
+
+- Start the app:‚
+
+```bash
+streamlit run app.py
+```
+
+## Guides
 
 - Get familiar with the [main concepts](https://docs.streamlit.io/library/get-started/main-concepts)
  
+- [API reference](https://docs.streamlit.io/library/api-reference)
+
+- [Cheat Sheet](https://docs.streamlit.io/library/cheatsheet)
