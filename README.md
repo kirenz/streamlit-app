@@ -81,3 +81,5 @@ streamlit run app.py
 - [API reference](https://docs.streamlit.io/library/api-reference)
 
 - [Cheat Sheet](https://docs.streamlit.io/library/cheatsheet)
+
+- [Layout](https://blog.streamlit.io/designing-streamlit-apps-for-the-user-part-ii/?utm_medium=email&_hsmi=200036447&_hsenc=p2ANqtz-_qSKsHsARDBJ3IdOcp5kzxhvmFIn4KBaC9-mLf2Gbu0PpToQUqZpdDlv7AWxrx0fiObeilulYthAZqC7QIdHBLTphUBg&utm_content=200036447&utm_source=hs_automation)
