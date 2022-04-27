@@ -69,6 +69,14 @@ streamlit run app.py
 
 - If you are done, go to your terminal and stop your app with `Ctrl+C`
 
+## GitHub
+
+Next, we want to synchronize your streamlit-app folder with GitHub:
+
+- Show all hidden files in the folder ([Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5), Mac: in Finder, press `Command` + `Shift` + `.` (period))
+- Delete the folder `.git`and the file `.gitattributes` (if present)
+- Now you can synchronize the folder with your GitHub-Account
+
 ## Guides
 
 - Get familiar with the [main concepts](https://docs.streamlit.io/library/get-started/main-concepts)
