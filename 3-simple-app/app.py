@@ -1,37 +1,56 @@
+# SETUP
+
 import streamlit as st
 import numpy as np
 import pandas as pd
+import altair as alt
 
-st.write("Here's our first attempt at using data to create a table:")
 
-st.write(pd.DataFrame({
-    'first column': [1, 2, 3, 4],
-    'second column': [10, 20, 30, 40]
-}))
+#-------------------
+# DATA
 
-st.write("DataFrame with highlight_max:")
+df = pd.read_csv("https://raw.githubusercontent.com/kirenz/datasets/master/housing_hml3.csv")
 
-dataframe = pd.DataFrame(
-    np.random.randn(10, 20),
-    columns=('col %d' % i for i in range(20)))
 
-st.dataframe(dataframe.style.highlight_max(axis=0))
+#-------------------
+# START OF APP
 
-st.write("Line chart")
+#-------------------
+# HEADER
 
-chart_data = pd.DataFrame(
-     np.random.randn(20, 3),
-     columns=['a', 'b', 'c'])
+# Title of our app
+st.title("My new App!")
+# Add header
+st.header("This is my interactive app")
+# Add a gif
+st.markdown("![Alt Text](https://media.giphy.com/media/MeJgB3yMMwIaHmKD4z/giphy.gif)")
 
-st.line_chart(chart_data)
 
-st.write("Plot a map")
+#-------------------
+# BODY
 
-map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-    columns=['lat', 'lon'])
+#-------------------
+# Show static DataFrame
+st.subheader("Show Data")
+st.write("Here's my housing data:")
+st.dataframe(df)
 
-st.map(map_data)
+#-------------------
+# Show a map
+st.write("Plot a map of our districts")
+st.map(df)
+
+#-------------------
+# Show a plot with Altair
+
+c = alt.Chart(df).mark_point().encode(
+    x='median_income:Q',
+    y='median_house_value:Q',
+    color='ocean_proximity:N'
+)
+
+st.altair_chart(c, use_container_width=True)
+
 
 # Widgets
 
