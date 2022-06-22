@@ -7,7 +7,7 @@ from pickle import APPEND
 from turtle import width
 
 #-------------------
-# CREATE DATA
+# DATA
 
 # Simple dataframe
 df = pd.DataFrame({
