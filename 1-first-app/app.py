@@ -1,10 +1,8 @@
 #-------------------#
 # SETUP
 import streamlit as st
-
 import pandas as pd
 import altair as alt
-
 from pathlib import Path
 
 #-------------------#
@@ -32,7 +30,6 @@ st.image('hdm-logo.jpg')
 # Add header
 st.header("My header")
 
-
 #-------------------#
 # SIDEBAR
 
@@ -44,7 +41,6 @@ satisfaction = st.sidebar.slider('What is your life satisfaction?', 0, 10, 1)
 
 # Show output of slider selection
 st.sidebar.write("My life satisfaction is around ", satisfaction, 'points')
-
 
 #-------------------#
 # BODY
@@ -63,7 +59,6 @@ c = alt.Chart(df).mark_circle().encode(
 
 # Show plot
 st.altair_chart(c, use_container_width=True)
-
 
 ###-------------------###
 # END OF APP
