@@ -18,7 +18,7 @@ df = pd.read_csv(home_path + "/streamlit-app/data/oecd.csv")
 #-------------------
 # START OF APP
 
-#-------------------
+#-------------------#
 # HEADER
 
 # Title of our app
@@ -30,7 +30,7 @@ st.header("Mein Header")
 
 #st.image('hdm-logo.jpg')
 
-#-------------------
+#-------------------#
 # BODY
 
 
@@ -42,23 +42,20 @@ st.dataframe(df)
 # Bar chart
 st.bar_chart(df)
 
-#-------------------
-
+#-------------------#
 # SIDEBAR
 
+# Radio
 st.sidebar.radio(
     "How would you like to be contacted?",
     ("Email", "Home phone", "Mobile phone")
 )
 
-#-------------------
-
-# WIDGET
-
+# Slider
 age = st.sidebar.slider('How old are you?', 0, 130, 25)
 st.sidebar.write("I'm ", age, 'years old')
 
-
+# Date
 d = st.sidebar.date_input(
      "When's your birthday",
      datetime.date(2019, 7, 6))
