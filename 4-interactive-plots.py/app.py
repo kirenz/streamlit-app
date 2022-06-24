@@ -22,7 +22,7 @@ df = pd.read_csv(home_path + "/streamlit-app/data/covid.csv")
 df['Date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
 
 
-#-------------------
+
 #-------------------
 # START OF APP
 
