@@ -1,4 +1,4 @@
-,Country,Latitude,Longitude,date,total_cases,new_cases,total_deaths,new_deaths,total_cases_per_million,new_cases_per_million,total_deaths_per_million,new_deaths_per_million,total_tests,new_tests,total_tests_per_thousand,new_tests_per_thousand
+,country,latitude,longitude,date,total_cases,new_cases,total_deaths,new_deaths,total_cases_per_million,new_cases_per_million,total_deaths_per_million,new_deaths_per_million,total_tests,new_tests,total_tests_per_thousand,new_tests_per_thousand
 0,Argentina,-34.0,-64.0,9/4/2020,1795,80,65,5,39.716,1.77,1.438,0.111,14850,1520,0.329,0.034
 1,Argentina,-34.0,-64.0,10/4/2020,1894,99,79,14,41.907,2.19,1.748,0.31,16379,1529,0.362,0.034
 2,Argentina,-34.0,-64.0,11/4/2020,1975,81,82,3,43.699,1.792,1.814,0.066,18027,1648,0.399,0.036

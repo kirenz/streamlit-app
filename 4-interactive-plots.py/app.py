@@ -1,28 +1,39 @@
 # SETUP
-
-
 import streamlit as st
+
 import numpy as np
 import pandas as pd
 import altair as alt
+
+from pathlib import Path
 import datetime as dt
 from datetime import datetime
 
 #-------------------
 # DATA
 
-# Define path to data
-
+# Obtain home path
 home_path = str(Path.home())
 
-# Import
-df = pd.read_csv(home_path + "streamlit-app/data/covid.csv")
+# Data import
+df = pd.read_csv(home_path + "/streamlit-app/data/covid.csv")
 
-# Transformation
+# Data transformation
 df['Date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
 
 #-------------------
+#-------------------
 # START OF APP
+
+#-------------------
+# SIDEBAR
+
+# Make a country list
+country_list = st.sidebar.multiselect('Select country', df['country'].unique().tolist())
+
+# Create a subset out of country_list 
+if len(country_list) > 0:
+    df_subset = df[df['country'].isin(country_list)]
 
 #-------------------
 # HEADER
@@ -39,22 +50,11 @@ st.header("This is my interactive app")
 # Show static DataFrame
 st.subheader("Show Data")
 st.write("Here's my data:")
-st.dataframe(df)
+st.dataframe(df_subset)
 
 #-------------------
 # Show a map
 st.write("Plot a map")
-st.map(df)
+st.map(df_subset)
 
 #-------------------
-# 
-
-
-# Filters UI
-subset_data = df
-country_name_input = st.sidebar.multiselect(
-'Country name',
-df.groupby('Country/Region').count().reset_index()['Country/Region'].tolist())
-# by country name
-if len(country_name_input) > 0:
-    subset_data = df[df['Country/Region'].isin(country_name_input)]

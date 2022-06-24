@@ -3,17 +3,18 @@
 import streamlit as st
 import pandas as pd
 import datetime
+from pathlib import Path
 
 
 #-------------------
-# CREATE DATA
+# IMPORT LOCAL DATA
 
-# Simple dataframe
-df = pd.DataFrame({
-    'A': [1, 4, 3, 2],
-    'B': [10, 20, 30, 40]
-    })
+# Obtain home path
+home_path = str(Path.home())
+# Data import
+df = pd.read_csv(home_path + "/streamlit-app/data/oecd.csv")
 
+#-------------------
 #-------------------
 # START OF APP
 
