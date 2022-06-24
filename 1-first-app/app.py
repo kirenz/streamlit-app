@@ -1,12 +1,14 @@
+#-------------------#
 # SETUP
-
 import streamlit as st
+
 import pandas as pd
+import altair as alt
+
 import datetime
 from pathlib import Path
 
-
-#-------------------
+#-------------------#
 # IMPORT LOCAL DATA
 
 # Obtain home path
@@ -14,49 +16,62 @@ home_path = str(Path.home())
 # Data import
 df = pd.read_csv(home_path + "/streamlit-app/data/oecd.csv")
 
-#-------------------
-#-------------------
+###-------------------###
 # START OF APP
 
 #-------------------#
 # HEADER
 
 # Title of our app
-st.title("Meine erste App")
-# Add header
-st.header("Mein Header")
-# Add a gif from https://giphy.com/
-#st.markdown("![Katze](https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif)")
+st.title("My first App")
 
-#st.image('hdm-logo.jpg')
+# Image
+st.image('hdm-logo.jpg')
+
+# Add header
+st.header("My header")
 
 #-------------------#
 # BODY
 
-
 #-------------------
 # Show static DataFrame
+
+st.write("Take a look at my data")
+
 st.dataframe(df)
 
 #-------------------
-# Bar chart
-st.bar_chart(df)
+# Make a chart with altair
+
+st.write("Take a look at my chart")
+
+c = alt.Chart(df).mark_circle().encode(
+     x='life_satisfaction', 
+     y='gdp_per_capita', 
+     color='country',
+     tooltip = ['life_satisfaction', 'gdp_per_capita', 'country']
+     )
+
+st.altair_chart(c, use_container_width=True)
 
 #-------------------#
 # SIDEBAR
 
-# Radio
-st.sidebar.radio(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone")
-)
+# Header
+st.sidebar.header("This is my sidebar")
 
 # Slider
-age = st.sidebar.slider('How old are you?', 0, 130, 25)
-st.sidebar.write("I'm ", age, 'years old')
+satisfaction = st.sidebar.slider('What is your life satisfaction?', 0, 10, 1)
+
+st.sidebar.write("My life satisfaction is around ", satisfaction, 'points')
 
 # Date
 d = st.sidebar.date_input(
      "When's your birthday",
      datetime.date(2019, 7, 6))
-st.write('Your birthday is:', d)
+
+st.sidebar.write('Your birthday is:', d)
+
+###-------------------###
+# END OF APP
