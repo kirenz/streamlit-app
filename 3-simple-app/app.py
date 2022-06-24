@@ -19,11 +19,11 @@ df = pd.read_csv("https://raw.githubusercontent.com/kirenz/datasets/master/housi
 # HEADER
 
 # Title of our app
-st.title("My new App!")
+st.title("Hello world!")
 # Add header
 st.header("This is my interactive app")
 # Add a gif
-st.markdown("![Alt Text](https://media.giphy.com/media/MeJgB3yMMwIaHmKD4z/giphy.gif)")
+st.markdown("![Alt Text](https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif)")
 
 
 #-------------------
@@ -42,6 +42,9 @@ st.map(df)
 
 #-------------------
 # Show a plot with Altair
+st.subheader("Data exploration")
+
+st.write("Scatterplot")
 
 c = alt.Chart(df).mark_point().encode(
     x='median_income:Q',
@@ -50,6 +53,46 @@ c = alt.Chart(df).mark_point().encode(
 )
 
 st.altair_chart(c, use_container_width=True)
+
+#-------------------
+# Interactive plot with Altair
+
+st.write("Interactive Scatterplot")
+
+
+column_filter= df.filter().columns.tolist()
+
+c = alt.Chart(df).mark_point().encode(
+    x='median_income:Q',
+    y='median_house_value:Q',
+    color='ocean_proximity:N'
+)
+
+st.altair_chart(c, use_container_width=True)
+
+
+# Filters UI
+subset_data = df
+country_name_input = st.sidebar.multiselect(
+'Country name',
+df.groupby('Country/Region').count().reset_index()['Country/Region'].tolist())
+# by country name
+if len(country_name_input) > 0:
+    subset_data = df[df['Country/Region'].isin(country_name_input)]
+
+
+# Filters UI
+subset_data = df
+
+country_name_input = st.sidebar.multiselect(
+'Country name',
+df.groupby('Country/Region').count().reset_index()['Country/Region'].tolist())
+# by country name
+if len(country_name_input) > 0:
+    subset_data = df[df['Country/Region'].isin(country_name_input)]
+
+
+
 
 
 # Widgets
