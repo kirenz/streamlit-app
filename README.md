@@ -9,11 +9,14 @@ A [Streamlit demo](https://streamlit.io/gallery) to interactively visualize Uber
 ![](img/uber.png)
 
 
-## Setup
+## Prerequisites
 
-First, we need to ensure you have a recent version of **Anaconda** installed (if you don't have Anaconda, follow this [Anaconda installation tutorial](https://kirenz.github.io/codelabs/codelabs/anaconda-install/#0). 
+First, we need to ensure you have a recent version of [Anaconda](https://www.anaconda.com/products/distribution), [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Miniforge](https://github.com/conda-forge/miniforge) installed. Follow these instructions if you haven't already installed one of them on your system:
 
-If you already have Anaconda, we update it: 
+- [Miniforge installation](https://kirenz.github.io/codelabs/codelabs/miniforge-setup/#0) (recommended)
+- [Anaconda installation](https://kirenz.github.io/codelabs/codelabs/anaconda-install/#0)
+
+If you already have Miniforge or Anaconda, we update it: 
 
 - On *Windows* open the Start menu and open an Anaconda Command Prompt. On *macOS* or *Linux* open a terminal window:
 
@@ -21,7 +24,9 @@ If you already have Anaconda, we update it:
 conda update --all
 ```
 
-- `cd` into a folder you want to install this repo:
+## Download Repo
+
+- In your terminal, `cd` into a folder you want to install this repo:
 
 ```bash
 cd your-path
@@ -69,13 +74,6 @@ streamlit run app.py
 
 - If you are done, go to your terminal and stop your app with `Ctrl+C`
 
-## GitHub
-
-Next, we want to synchronize your streamlit-app folder with GitHub:
-
-- Show all hidden files in the folder ([Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5), Mac: in Finder, press `Command` + `Shift` + `.` (period))
-- Delete the folder `.git`and the file `.gitattributes` (if present)
-- Now you can synchronize the folder with your GitHub-Account
 
 ## Guides
 
@@ -92,3 +90,11 @@ Next, we want to synchronize your streamlit-app folder with GitHub:
 ```bash
 streamlit hello
 ```
+
+## GitHub
+
+Note that if you want to synchronize your streamlit-app folder with GitHub, you should delete all existing git files:
+
+- Show all hidden files in the folder ([Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5), Mac: in Finder, press `Command` + `Shift` + `.` (period))
+- Delete the folder `.git`and the file `.gitattributes` (if present)
+- Now you can synchronize the folder with your own GitHub-Account
