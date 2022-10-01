@@ -13,8 +13,8 @@ A [Streamlit demo](https://streamlit.io/gallery) to interactively visualize Uber
 
 First, we need to ensure you have a recent version of [Anaconda](https://www.anaconda.com/products/distribution), [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Miniforge](https://github.com/conda-forge/miniforge) installed. Follow these instructions if you haven't already installed one of them on your system:
 
-- [Miniforge installation](https://kirenz.github.io/codelabs/codelabs/miniforge-setup/#0) (recommended)
-- [Anaconda installation](https://kirenz.github.io/codelabs/codelabs/anaconda-install/#0)
+- [Anaconda installation](https://kirenz.github.io/codelabs/codelabs/anaconda-install/#0) (recommended)
+- [Miniforge installation](https://kirenz.github.io/codelabs/codelabs/miniforge-setup/#0) 
 
 If you already have Miniforge or Anaconda, we update it: 
 
