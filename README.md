@@ -24,21 +24,13 @@ If you already have Miniforge or Anaconda, we update it:
 conda update --all
 ```
 
-## Download Repo
+## Clone Repo (use this template)
 
-- In your terminal, `cd` into a folder you want to install this repo:
+- In this GitHub repo, click on "Use this Template" (the green button at the top of this page)
 
-```bash
-cd your-path
-```
+- In your GitHub-Account, download the `streamlit-app` repository to your machine with GitHub Desktop
 
-- Clone the repository containing all code:
-
-```bash
-git clone https://github.com/kirenz/streamlit-app
-```
-
-- cd into the streamlit-app folder
+- In your terminal, cd into the `streamlit-app` folder
 
 ```bash
 cd streamlit-app
@@ -90,11 +82,3 @@ streamlit run app.py
 ```bash
 streamlit hello
 ```
-
-## GitHub
-
-Note that if you want to synchronize your streamlit-app folder with GitHub, you should delete all existing git files:
-
-- Show all hidden files in the folder ([Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5), Mac: in Finder, press `Command` + `Shift` + `.` (period))
-- Delete the folder `.git`and the file `.gitattributes` (if present)
-- Now you can synchronize the folder with your own GitHub-Account
