@@ -15,7 +15,7 @@ A [Streamlit demo](https://streamlit.io/gallery) to interactively visualize Uber
 
 - In your GitHub-Account, download the `streamlit-app` repository to your machine with GitHub Desktop
 
-- In your terminal, cd into the `streamlit-app` folder
+- In your terminal (Mac) or Anaconda Command Prompt (Windows), cd into the `streamlit-app` folder
 
 ```bash
 cd streamlit-app
