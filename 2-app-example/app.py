@@ -33,7 +33,7 @@ st.markdown("![Alt Text](https://media.giphy.com/media/MeJgB3yMMwIaHmKD4z/giphy.
 #-------------------#
 # BODY
 
-# Show df ans highlight some attributes
+# Show df and highlight some attributes
 st.write("DataFrame with highlight_max:")
 st.dataframe(df.style.highlight_max(axis=0))
 
