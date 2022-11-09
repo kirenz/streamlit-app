@@ -4,17 +4,13 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import altair as alt
-from pathlib import Path
 
 #-------------------
 #-------------------#
-# IMPORT LOCAL DATA
+# IMPORT DATA
 
-# Obtain home path
-home_path = str(Path.home())
+df = pd.read_csv("https://raw.githubusercontent.com/kirenz/datasets/master/oecd-new.csv")
 
-# Data import (you may need to change the path)
-df = pd.read_csv(home_path + "/streamlit-app/data/oecd.csv")
 
 # Data preparation
 df = df.sort_values(by=['gdp_per_capita'], ascending=False)
