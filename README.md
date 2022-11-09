@@ -45,6 +45,8 @@ cd 1-first-app
 streamlit run app.py
 ```
 
+- If asked for your e-mail, you can simply press enter (you don't need to provide this information)
+
 - While developing a Streamlit app, it's recommended to lay out your editor and browser windows side by side, so the code and the app can be seen at the same time. 
 
 - Complete the code with the help of this [Cheat Sheet](https://docs.streamlit.io/library/cheatsheet).
