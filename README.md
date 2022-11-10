@@ -19,6 +19,7 @@
 3. In your GitHub-Account, click on the green `Code` button and select `Open with GitHub Desktop` to copy the `streamlit-app` repository to your local machine.
 
 
+---
 
 
 ### Run the app
@@ -71,7 +72,7 @@ streamlit run app.py
 ```
 
 
-*If asked for your e-mail, you can simply press enter (you don't need to provide this information)*
+- *If asked for your e-mail, you can simply press enter (you don't need to provide this information)*
 
 
 ---
@@ -79,7 +80,7 @@ streamlit run app.py
 - Step 6: The command should open your browser and display the app. 
 
 
-*If your browser opened but only displays a blank screen (this may happen if you use Safari), copy the url and paste it in another browser (e.g., Chrome).*
+- *If your browser opened but only displays a blank screen (this may happen if you use Safari), copy the url and paste it in another browser (e.g., Chrome).*
 
 ---
 
@@ -88,9 +89,14 @@ streamlit run app.py
 
 ---
 
-- Step 8: In the explorer, open 
+- Step 8: In the VS Code Explorer, select `1-first-app` and open the file `app.py` (this is the code of the app)
 
-- While developing a Streamlit app, it's recommended to lay out your editor and browser windows side by side, so the code and the app can be seen at the same time. 
+
+- While developing a Streamlit app, it's recommended to lay out your VS code editor and browser windows side by side, so the code and the app can be seen at the same time. 
+
+---
+
+- Step 9: In app.py, change the Change the title of the 
 
 - If you are done, go to your terminal and stop your app with `Ctrl+C`
 
