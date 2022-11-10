@@ -3,6 +3,8 @@
 > [Streamlit](https://streamlit.io) turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.
 
 
+Follow this tutorial to set up Streamlit:
+
 
 ### Clone Repo (use this template)
 
@@ -97,16 +99,24 @@ streamlit run app.py
 
 ---
 
-- Step 9: In app.py, change the Change the title of the 
+- Step 9: VS Code: In the code of app.py, change `st.title("My first App")` to `st.title("Hello World!")` and save the changes.  
 
-- If you are done, go to your terminal and stop your app with `Ctrl+C`
-
-
-- Complete the code with the help of this [Cheat Sheet](https://docs.streamlit.io/library/cheatsheet).
+---
 
 
+- Step 10: Refresh your browser to display the changes.
 
-## Guides
+---
+
+
+- Step 11: If you are done, close the browser window, go to your terminal and stop your app with `Ctrl+C` (or simply close the terminal window).
+
+
+
+---
+
+
+### Guides
 
 - Get familiar with the [main concepts](https://docs.streamlit.io/library/get-started/main-concepts)
  
@@ -115,6 +125,8 @@ streamlit run app.py
 - [Cheat Sheet](https://docs.streamlit.io/library/cheatsheet)
 
 - [Layout](https://blog.streamlit.io/designing-streamlit-apps-for-the-user-part-ii/?utm_medium=email&_hsmi=200036447&_hsenc=p2ANqtz-_qSKsHsARDBJ3IdOcp5kzxhvmFIn4KBaC9-mLf2Gbu0PpToQUqZpdDlv7AWxrx0fiObeilulYthAZqC7QIdHBLTphUBg&utm_content=200036447&utm_source=hs_automation)
+
+
 
 - App demo:
 
