@@ -12,11 +12,11 @@
 
 ---
 
-2. Name the repo `streamlit-app`
+2. Name the repo *streamlit-app*
 
 ---
 
-3. In your GitHub-Account, click on the green `Code` button and select `Open with GitHub Desktop` to copy the `streamlit-app` repository to your local machine.
+3. In your GitHub-Account, click on the green **Code** button and select **Open with GitHub Desktop** to copy the *streamlit-app* repository to your local machine.
 
 
 ---
@@ -29,7 +29,7 @@ In your terminal (Mac) or Anaconda Command Prompt (Windows):
 
 ---
 
-- Step 1: `cd` into the `streamlit-app` folder (replace YOURPATH with your path to the folder streamlit-app)
+- Step 1: `cd` into the *streamlit-app* folder (replace YOURPATH with your path to the folder streamlit-app)
 
 
 ```bash
@@ -38,7 +38,7 @@ cd YOURPATH/streamlit-app
 
 ---
 
-- Step 2: install all needed Python libraries from the `environment.yml` file to create a virtual environment named `streamlit`:
+- Step 2: install all needed Python libraries from the *environment.yml* file to create a virtual environment named *streamlit*:
 
 
 ```bash
@@ -47,7 +47,7 @@ conda env create -f environment.yml
 
 ---
 
-- Step 3: Activate the `streamlit` environment:
+- Step 3: Activate the *streamlit* environment:
 
 ```bash
 conda activate streamlit
@@ -55,7 +55,7 @@ conda activate streamlit
 
 ---
 
-- Step 4: `cd` into 1-first-app
+- Step 4: Change current directory (cd) into *1-first-app*
 
 
 ```bash
@@ -82,6 +82,7 @@ streamlit run app.py
 
 - *If your browser opened but only displays a blank screen (this may happen if you use Safari), copy the url and paste it in another browser (e.g., Chrome).*
 
+
 ---
 
 - Step 7: Start Visual Studio Code and click on `Open Folder` in the Explorer. Select the `streamlit-app` folder.
@@ -92,7 +93,7 @@ streamlit run app.py
 - Step 8: In the VS Code Explorer, select `1-first-app` and open the file `app.py` (this is the code of the app)
 
 
-- While developing a Streamlit app, it's recommended to lay out your VS code editor and browser windows side by side, so the code and the app can be seen at the same time. 
+- *While developing a Streamlit app, it's recommended to lay out your VS code editor and browser windows side by side, so the code and the app can be seen at the same time.* 
 
 ---
 
