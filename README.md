@@ -13,19 +13,25 @@ A [Streamlit demo](https://streamlit.io/gallery) to interactively visualize Uber
 
 - In this GitHub repo, click on "Use this Template" (the green button at the top of this page)
 
-- In your GitHub-Account, download the `streamlit-app` repository to your machine with GitHub Desktop
+- Name the repo `streamlit-app`
 
-- In your terminal (Mac) or Anaconda Command Prompt (Windows), cd into the `streamlit-app` folder
+- In your GitHub-Account, click on the green `Code` button and select `Open with GitHub Desktop` to copy the `streamlit-app` repository to your local machine.
+
+- In your terminal (Mac) or Anaconda Command Prompt (Windows), `cd` into the `streamlit-app` folder (replace YOURPATH with your path to the folder streamlit-app)
+
 
 ```bash
-cd streamlit-app
+cd YOURPATH/streamlit-app
 ```
 
-- Now we install all needed Python libraries from the `environment.yml` file to create a virtual environment named `streamlit`:
+- Now we can install all needed Python libraries from the `environment.yml` file to create a virtual environment named `streamlit` (this will only work if you are inside the `streamlit-app` folder):
+
 
 ```bash
 conda env create -f environment.yml
 ```
+
+
 
 - Activate the `streamlit` environment:
 
@@ -33,7 +39,8 @@ conda env create -f environment.yml
 conda activate streamlit
 ```
 
-- cd into 1-first-app
+- Let's `cd` into 1-first-app
+
 
 ```bash
 cd 1-first-app
@@ -47,11 +54,18 @@ streamlit run app.py
 
 - If asked for your e-mail, you can simply press enter (you don't need to provide this information)
 
+- The command should open your browser and display the app. 
+
+- If your browser opened but only displays a blank screen (this may happen if you use Safari), copy the url and paste it in another browser (e.g., Chrome).
+
+
 - While developing a Streamlit app, it's recommended to lay out your editor and browser windows side by side, so the code and the app can be seen at the same time. 
+
+- If you are done, go to your terminal and stop your app with `Ctrl+C`
+
 
 - Complete the code with the help of this [Cheat Sheet](https://docs.streamlit.io/library/cheatsheet).
 
-- If you are done, go to your terminal and stop your app with `Ctrl+C`
 
 
 ## Guides
