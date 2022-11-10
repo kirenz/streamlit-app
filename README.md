@@ -1,12 +1,13 @@
-## Streamlit 
+# Streamlit 
+
 
 > [Streamlit](https://streamlit.io) turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.
 
 
-Follow this tutorial to set up Streamlit:
+## Setup
 
 
-### Clone Repo (use this template)
+### Clone the Repo (use this template)
 
 ---
 
@@ -87,6 +88,10 @@ streamlit run app.py
 
 ---
 
+### Start VS Code
+
+---
+
 - Step 7: Start Visual Studio Code and click on `Open Folder` in the Explorer. Select the `streamlit-app` folder.
 
 
@@ -115,8 +120,10 @@ streamlit run app.py
 
 ---
 
+---
 
-### Guides
+
+## Guides
 
 - Get familiar with the [main concepts](https://docs.streamlit.io/library/get-started/main-concepts)
  
@@ -127,6 +134,7 @@ streamlit run app.py
 - [Layout](https://blog.streamlit.io/designing-streamlit-apps-for-the-user-part-ii/?utm_medium=email&_hsmi=200036447&_hsenc=p2ANqtz-_qSKsHsARDBJ3IdOcp5kzxhvmFIn4KBaC9-mLf2Gbu0PpToQUqZpdDlv7AWxrx0fiObeilulYthAZqC7QIdHBLTphUBg&utm_content=200036447&utm_source=hs_automation)
 
 
+---
 
 - App demo:
 
@@ -134,6 +142,7 @@ streamlit run app.py
 streamlit hello
 ```
 
+---
 
 ![](https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4)
 
