@@ -1,30 +1,39 @@
-# Streamlit 
+## Streamlit 
 
-[Streamlit](https://streamlit.io) turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.
-
-![](https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4)
-
-A [Streamlit demo](https://streamlit.io/gallery) to interactively visualize Uber pickups in New York City:
-
-![](img/uber.png)
+*[Streamlit](https://streamlit.io) turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required.*
 
 
-## Clone Repo (use this template)
+
+### Clone Repo (use this template)
 
 - In this GitHub repo, click on "Use this Template" (the green button at the top of this page)
 
+---
+
 - Name the repo `streamlit-app`
+
+---
 
 - In your GitHub-Account, click on the green `Code` button and select `Open with GitHub Desktop` to copy the `streamlit-app` repository to your local machine.
 
-- In your terminal (Mac) or Anaconda Command Prompt (Windows), `cd` into the `streamlit-app` folder (replace YOURPATH with your path to the folder streamlit-app)
+---
+
+---
+
+### Run the app
+
+
+In your terminal (Mac) or Anaconda Command Prompt (Windows): 
+
+
+- Step 1: `cd` into the `streamlit-app` folder (replace YOURPATH with your path to the folder streamlit-app)
 
 
 ```bash
 cd YOURPATH/streamlit-app
 ```
 
-- Now we can install all needed Python libraries from the `environment.yml` file to create a virtual environment named `streamlit` (this will only work if you are inside the `streamlit-app` folder):
+- Step 2: install all needed Python libraries from the `environment.yml` file to create a virtual environment named `streamlit`:
 
 
 ```bash
@@ -32,21 +41,21 @@ conda env create -f environment.yml
 ```
 
 
-
-- Activate the `streamlit` environment:
+- Step 3: Activate the `streamlit` environment:
 
 ```bash
 conda activate streamlit
 ```
 
-- Let's `cd` into 1-first-app
+- Step 4: `cd` into 1-first-app
 
 
 ```bash
 cd 1-first-app
 ```
 
-- Start the app:
+- Step 5: Start the app:
+
 
 ```bash
 streamlit run app.py
@@ -83,3 +92,10 @@ streamlit run app.py
 ```bash
 streamlit hello
 ```
+
+
+![](https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/hero-video.mp4)
+
+A [Streamlit demo](https://streamlit.io/gallery) to interactively visualize Uber pickups in New York City:
+
+![](img/uber.png)
