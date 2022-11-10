@@ -6,25 +6,27 @@
 
 ### Clone Repo (use this template)
 
-- In this GitHub repo, click on "Use this Template" (the green button at the top of this page)
+---
+
+1. In this GitHub repo, click on "Use this Template" (the green button at the top of this page)
 
 ---
 
-- Name the repo `streamlit-app`
+2. Name the repo `streamlit-app`
 
 ---
 
-- In your GitHub-Account, click on the green `Code` button and select `Open with GitHub Desktop` to copy the `streamlit-app` repository to your local machine.
+3. In your GitHub-Account, click on the green `Code` button and select `Open with GitHub Desktop` to copy the `streamlit-app` repository to your local machine.
 
----
 
----
+
 
 ### Run the app
 
 
 In your terminal (Mac) or Anaconda Command Prompt (Windows): 
 
+---
 
 - Step 1: `cd` into the `streamlit-app` folder (replace YOURPATH with your path to the folder streamlit-app)
 
@@ -33,6 +35,8 @@ In your terminal (Mac) or Anaconda Command Prompt (Windows):
 cd YOURPATH/streamlit-app
 ```
 
+---
+
 - Step 2: install all needed Python libraries from the `environment.yml` file to create a virtual environment named `streamlit`:
 
 
@@ -40,12 +44,15 @@ cd YOURPATH/streamlit-app
 conda env create -f environment.yml
 ```
 
+---
 
 - Step 3: Activate the `streamlit` environment:
 
 ```bash
 conda activate streamlit
 ```
+
+---
 
 - Step 4: `cd` into 1-first-app
 
@@ -54,6 +61,8 @@ conda activate streamlit
 cd 1-first-app
 ```
 
+---
+
 - Step 5: Start the app:
 
 
@@ -61,12 +70,25 @@ cd 1-first-app
 streamlit run app.py
 ```
 
-- If asked for your e-mail, you can simply press enter (you don't need to provide this information)
 
-- The command should open your browser and display the app. 
+*If asked for your e-mail, you can simply press enter (you don't need to provide this information)*
 
-- If your browser opened but only displays a blank screen (this may happen if you use Safari), copy the url and paste it in another browser (e.g., Chrome).
 
+---
+
+- Step 6: The command should open your browser and display the app. 
+
+
+*If your browser opened but only displays a blank screen (this may happen if you use Safari), copy the url and paste it in another browser (e.g., Chrome).*
+
+---
+
+- Step 7: Start Visual Studio Code and click on `Open Folder` in the Explorer. Select the `streamlit-app` folder.
+
+
+---
+
+- Step 8: In the explorer, open 
 
 - While developing a Streamlit app, it's recommended to lay out your editor and browser windows side by side, so the code and the app can be seen at the same time. 
 
