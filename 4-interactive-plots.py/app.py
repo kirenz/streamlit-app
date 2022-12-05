@@ -12,11 +12,8 @@ from datetime import datetime
 #-------------------
 # DATA
 
-# Obtain home path
-home_path = str(Path.home())
-
 # Data import
-df = pd.read_csv(home_path + "/streamlit-app/data/covid.csv")
+df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/covid.csv')
 
 # Data transformation
 df['Date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
@@ -35,6 +32,7 @@ country_list = st.sidebar.multiselect('Select country', df['country'].unique().t
 # Create a subset out of country_list 
 if len(country_list) > 0:
     df_subset = df[df['country'].isin(country_list)]
+    
 
 #-------------------
 # HEADER
