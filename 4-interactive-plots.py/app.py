@@ -30,7 +30,7 @@ df['Date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
 country_list = st.sidebar.multiselect('Select country', df['country'].unique().tolist())
 
 # Create a subset out of country_list 
-if len(country_list) > 0:
+if len(country_list) >= 0:
     df_subset = df[df['country'].isin(country_list)]
     
 
