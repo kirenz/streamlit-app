@@ -41,11 +41,11 @@ cd YOURPATH/streamlit-app
 
 ---
 
-- Step 2: install all needed Python libraries from the *environment.yml* file to create a virtual environment named *streamlit*:
+- Step 2: install all needed Python libraries from the *environment.yml* file to create a virtual environment named *env-streamlit.yml*:
 
 
 ```bash
-conda env create -f environment.yml
+conda env create -f env-streamlit.yml
 ```
 
 ---
