@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{css_styler}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/vega@{vega_version}"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@{vegalite_version}"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@{vegaembed_version}"></script>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <div id="vis1"></div>
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <div id="vis2"></div>
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <div id="vis3"></div>
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+{slide_script}
+</script>
+<script type="text/javascript">
+  vegaEmbed('#vis1', {spec1}).catch(console.error);
+  vegaEmbed('#vis2', {spec2}).catch(console.error);
+  vegaEmbed('#vis3', {spec3}).catch(console.error);
+</script>
+</body>
+</html>
