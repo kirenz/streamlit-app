@@ -5,9 +5,11 @@ import altair as alt
 
 import page_one
 import page_two
+from my_data import df
+from streamlit_chart import c
 
 
-st.title('Multi-Page Marketing App')
+st.title('Multi-Page App')
 
 PAGES = {
     "Page one": page_one,
@@ -20,4 +22,10 @@ st.sidebar.title('Navigation')
 selection = st.sidebar.radio("Go to", list(PAGES.keys()))
 
 page = PAGES[selection]
+
+st.dataframe(df)
+
+st.altair_chart(c, use_container_width=True)
+
+
 page.app()
