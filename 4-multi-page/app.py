@@ -1,27 +1,18 @@
  # Importing required packages
 import streamlit as st
-import openai
-import uuid
-import time
 import pandas as pd
-import io
-from openai import OpenAI
-import os
-from dotenv import load_dotenv, find_dotenv
-_ = load_dotenv(find_dotenv())
+import altair as alt
 
-import user_persona
-import company_info
-import openai_model
+import page_one
+import page_two
 
 
 st.title('Multi-Page Marketing App')
 
 PAGES = {
-    "User Persona Creation": user_persona,
-    "Company Information": company_info,
-    "OpenAI Model": openai_model
-}
+    "Page one": page_one,
+    "Page two": page_two
+    }
 
 
 
