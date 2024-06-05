@@ -1,10 +1,10 @@
-# company_info.py
+# company_info
+
 import streamlit as st
-import pandas as pd
-import altair as alt
+
 
 def app():
-    st.title('My Title')
+    st.title('Unternehmensdaten')
 
     # Eingabefelder für Unternehmensdaten
     with st.form(key='company_info_form'):
@@ -39,6 +39,5 @@ def app():
 
             st.success("Unternehmensdaten erfolgreich gespeichert!")
 
-# Dieser Teil ist für Testzwecke, wenn Sie dieses Skript einzeln laufen lassen.
 if __name__ == "__main__":
     app()
