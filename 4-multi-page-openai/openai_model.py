@@ -18,7 +18,7 @@ def app():
     client = OpenAI()
 
     # Your chosen model
-    MODEL = "gpt-4-1106-preview"
+    MODEL = "gpt-4o"
 
     # Initialize session state variables
     if "session_id" not in st.session_state:
